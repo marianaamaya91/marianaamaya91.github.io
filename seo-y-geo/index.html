@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SEO y GEO para Google, ChatGPT, Gemini e IA | Mariana Amaya</title>
+  <meta name="description" content="Consultoría SEO y GEO para mejorar la visibilidad de tu marca en Google, Bing, ChatGPT, Gemini, Perplexity, Copilot, Grok y resultados de IA. Estrategia, reporting, contenidos y datos estructurados.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://marianaamaya91.github.io/seo-y-geo/">
+
+  <link rel="icon" href="/favicon-mariana-amaya-seo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon-mariana-amaya-seo.svg">
+
+  <meta property="og:title" content="SEO y GEO para Google, ChatGPT, Gemini e IA | Mariana Amaya">
+  <meta property="og:description" content="Consultoría SEO y GEO para mejorar la visibilidad de tu marca en buscadores, LLMs y resultados generativos de IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marianaamaya91.github.io/seo-y-geo/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png">
+  <meta property="og:image:alt" content="Mariana Amaya, consultora SEO y GEO freelance">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO y GEO para Google, ChatGPT, Gemini e IA | Mariana Amaya">
+  <meta name="twitter:description" content="Estrategia SEO y GEO para mejorar la visibilidad de una marca en Google, Bing, ChatGPT, Gemini, Perplexity, Copilot, Grok y respuestas de IA.">
+  <meta name="twitter:image" content="https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png">
+
+  <style>
+    :root {
+      --bg: #f7f3ee;
+      --dark: #111827;
+      --dark-soft: #1f2937;
+      --text: #273142;
+      --muted: #667085;
+      --card: #ffffff;
+      --line: #eadfd4;
+      --accent: #b36b4f;
+      --accent-dark: #884732;
+      --accent-soft: #f4ded4;
+      --cream: #fffaf5;
+      --shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 250, 245, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      line-height: 1.15;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark-soft);
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-dark);
+    }
+
+    .nav-cta {
+      background: var(--dark);
+      color: #ffffff !important;
+      padding: 10px 16px;
+      border-radius: 999px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 92px 22px 76px;
+      background:
+        radial-gradient(circle at top left, rgba(179, 107, 79, 0.22), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(17, 24, 39, 0.16), transparent 32%),
+        linear-gradient(135deg, #fffaf5 0%, #f7f3ee 45%, #efe2d9 100%);
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--accent-dark);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.05);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 24px 0 22px;
+      color: var(--dark);
+      font-size: clamp(40px, 5.5vw, 64px);
+      line-height: 1;
+      letter-spacing: -2.4px;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      font-size: 20px;
+      color: #3f4a5f;
+      margin: 0 0 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--dark);
+      color: #ffffff;
+      box-shadow: 0 18px 30px rgba(17, 24, 39, 0.18);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--dark);
+      border: 1px solid var(--line);
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(234,223,212,0.9);
+      border-radius: 34px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-card h2 {
+      font-size: 28px;
+      margin: 0 0 12px;
+      color: var(--dark);
+      letter-spacing: -0.7px;
+      line-height: 1.15;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .mini-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      font-weight: 700;
+      color: var(--dark-soft);
+    }
+
+    .mini-item span {
+      color: var(--accent-dark);
+      flex: 0 0 auto;
+    }
+
+    section {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 78px 22px;
+      display: block;
+      clear: both;
+    }
+
+    .section-head {
+      max-width: 880px;
+      margin-bottom: 34px;
+    }
+
+    .section-label {
+      color: var(--accent-dark);
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--dark);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0;
+      max-width: 820px;
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(260px, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card {
+      min-width: 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.05);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--dark);
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .card a {
+      color: var(--accent-dark);
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+      gap: 34px;
+      align-items: start;
+      background: var(--dark);
+      color: #ffffff;
+      border-radius: 34px;
+      padding: 46px;
+      box-shadow: var(--shadow);
+    }
+
+    .feature h2 {
+      color: #ffffff;
+    }
+
+    .feature p {
+      color: #d6dce8;
+    }
+
+    .feature a {
+      color: #ffffff;
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .feature-item {
+      min-width: 0;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 20px;
+      color: #d6dce8;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #ffffff;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .soft-box {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 42px;
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.04);
+    }
+
+    .soft-box p {
+      color: var(--muted);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .list li {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: var(--text);
+    }
+
+    .list li strong {
+      color: var(--dark);
+    }
+
+    .list a {
+      color: var(--accent-dark);
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--dark);
+      font-size: 18px;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .cta-section {
+      padding-top: 30px;
+    }
+
+    .cta {
+      background:
+        radial-gradient(circle at top left, rgba(179, 107, 79, 0.35), transparent 34%),
+        linear-gradient(135deg, var(--dark) 0%, #263244 100%);
+      color: #ffffff;
+      text-align: center;
+      border-radius: 38px;
+      padding: 66px 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: #ffffff;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      color: #d6dce8;
+      font-size: 18px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #ffffff;
+      text-align: center;
+      padding: 34px 20px;
+    }
+
+    footer p {
+      margin: 6px 0;
+      color: #d6dce8;
+    }
+
+    footer a {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1100px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+      }
+
+      .feature {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-list {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-inner,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        display: block;
+      }
+
+      .brand {
+        margin-bottom: 12px;
+      }
+
+      .brand-logo {
+        width: 210px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 64px 18px 54px;
+      }
+
+      h1 {
+        letter-spacing: -1.4px;
+      }
+
+      .hero-lead {
+        font-size: 18px;
+      }
+
+      .hero-card,
+      .feature,
+      .soft-box,
+      .cta {
+        border-radius: 26px;
+        padding: 28px;
+      }
+
+      section {
+        padding: 58px 18px;
+      }
+
+      .grid,
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://marianaamaya91.github.io/#person",
+        "name": "Mariana Amaya",
+        "url": "https://marianaamaya91.github.io/",
+        "image": "https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png",
+        "email": "mailto:mariana.amayacanas@gmail.com",
+        "jobTitle": "Consultora SEO y GEO freelance",
+        "description": "Consultora SEO y GEO freelance especializada en SEO técnico, Shopify, ecommerce, contenidos, datos estructurados, migraciones SEO, reporting GEO y posicionamiento en resultados de inteligencia artificial.",
+        "sameAs": [
+          "https://es.linkedin.com/in/mariana-amaya"
+        ],
+        "knowsAbout": [
+          "SEO",
+          "GEO",
+          "Generative Engine Optimization",
+          "Posicionamiento en LLMs",
+          "SEO para ChatGPT",
+          "SEO para Gemini",
+          "SEO para Perplexity",
+          "SEO para Copilot",
+          "SEO para Grok",
+          "SEO para IA",
+          "SEO técnico",
+          "SEO para Shopify",
+          "SEO ecommerce",
+          "Datos estructurados",
+          "Arquitectura semántica",
+          "Autoridad temática",
+          "Reporting SEO",
+          "Reporting GEO",
+          "Search Generative Experience",
+          "Inteligencia artificial aplicada al SEO"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://marianaamaya91.github.io/seo-y-geo/#service",
+        "name": "Consultoría SEO y GEO para buscadores, LLMs y resultados de IA",
+        "url": "https://marianaamaya91.github.io/seo-y-geo/",
+        "description": "Servicio de consultoría SEO y GEO para mejorar la visibilidad de marcas en Google, Bing, ChatGPT, Gemini, Perplexity, Copilot, Grok y resultados generativos de IA.",
+        "provider": {
+          "@id": "https://marianaamaya91.github.io/#person"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": [
+          "Consultoría SEO",
+          "Consultoría GEO",
+          "Optimización para LLMs",
+          "SEO para inteligencia artificial",
+          "Reporting SEO y GEO",
+          "Análisis de presencia en ChatGPT",
+          "Análisis de presencia en Gemini",
+          "Análisis de presencia en Perplexity",
+          "Estrategia de contenidos SEO",
+          "Datos estructurados",
+          "Arquitectura semántica",
+          "Auditoría SEO",
+          "SEO para Shopify"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://marianaamaya91.github.io/#website",
+        "url": "https://marianaamaya91.github.io/",
+        "name": "Mariana Amaya | Consultora SEO y GEO Freelance",
+        "publisher": {
+          "@id": "https://marianaamaya91.github.io/#person"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://marianaamaya91.github.io/seo-y-geo/#webpage",
+        "url": "https://marianaamaya91.github.io/seo-y-geo/",
+        "name": "SEO y GEO para Google, ChatGPT, Gemini e IA | Mariana Amaya",
+        "description": "Consultoría SEO y GEO para mejorar la visibilidad de una marca en Google, Bing, ChatGPT, Gemini, Perplexity, Copilot, Grok y resultados de IA.",
+        "isPartOf": {
+          "@id": "https://marianaamaya91.github.io/#website"
+        },
+        "about": {
+          "@id": "https://marianaamaya91.github.io/seo-y-geo/#service"
+        },
+        "mainEntity": {
+          "@id": "https://marianaamaya91.github.io/seo-y-geo/#service"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://marianaamaya91.github.io/seo-y-geo/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://marianaamaya91.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO y GEO",
+            "item": "https://marianaamaya91.github.io/seo-y-geo/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://marianaamaya91.github.io/seo-y-geo/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es GEO en SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GEO significa Generative Engine Optimization. Es una forma de optimización orientada a mejorar cómo una marca, web o contenido puede ser entendido, citado o recomendado por motores generativos y sistemas de inteligencia artificial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre SEO y GEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El SEO busca mejorar la visibilidad orgánica en buscadores como Google o Bing. El GEO amplía esa estrategia para mejorar la presencia de una marca en respuestas generadas por IA, asistentes conversacionales y modelos de lenguaje."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se puede posicionar una marca en ChatGPT, Gemini o Perplexity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No se posiciona igual que en Google, pero sí se puede trabajar la claridad de marca, la autoridad temática, los contenidos, las entidades, la presencia digital y los datos estructurados para facilitar que los sistemas de IA entiendan mejor una marca y sus servicios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye una estrategia SEO y GEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una estrategia SEO y GEO puede incluir auditoría SEO, arquitectura semántica, contenidos orientados a intención de búsqueda, datos estructurados, enlazado interno, optimización de entidades, autoridad temática, reporting GEO y análisis de oportunidades en resultados de IA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se puede medir si una marca aparece en ChatGPT, Gemini o Perplexity?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Aunque no se mide igual que el SEO tradicional, se pueden hacer análisis y reporting GEO para revisar si una marca aparece en respuestas de IA, qué competidores se mencionan, cómo se describe la marca, qué fuentes parecen influir y qué oportunidades existen para mejorar la presencia en ChatGPT, Gemini, Perplexity, Copilot, Grok y otros entornos generativos."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="/" aria-label="Inicio Mariana Amaya">
+        <img src="/logo-mariana-amaya-seo.svg" alt="Mariana Amaya, consultora SEO y GEO freelance" class="brand-logo" width="220" height="48">
+      </a>
+
+      <div class="nav-links">
+        <a href="#que-es-geo">Qué es GEO</a>
+        <a href="#estrategia">Estrategia</a>
+        <a href="#reporting">Reporting</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#faq">FAQs</a>
+        <a class="nav-cta" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Diagnóstico SEO</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">SEO · GEO · LLMs · ChatGPT · Gemini · IA</span>
+        <h1>SEO y GEO para aparecer en Google, ChatGPT y resultados de IA</h1>
+        <p class="hero-lead">Ayudo a marcas, ecommerce y proyectos digitales a adaptarse a la nueva forma de buscar: aparecer en Google y Bing, pero también ser entendidos, citados y recomendados en ChatGPT, Gemini, Perplexity, Copilot, Grok y otros entornos de inteligencia artificial donde los usuarios ya comparan, preguntan y toman decisiones.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Solicitar diagnóstico SEO y GEO</a>
+          <a class="btn btn-secondary" href="mailto:mariana.amayacanas@gmail.com">Escribirme por email</a>
+        </div>
+
+        <div class="trust-row" aria-label="Especialidades SEO y GEO">
+          <span class="pill">SEO técnico</span>
+          <span class="pill">GEO</span>
+          <span class="pill">ChatGPT y Gemini</span>
+          <span class="pill">Reporting LLMs</span>
+          <span class="pill">Contenido para IA</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resumen de consultoría SEO y GEO">
+        <h2>El SEO ya no va solo de rankings: también va de comprensión, entidades y confianza</h2>
+        <p>Los usuarios están cambiando la manera de informarse. Ya no solo buscan en Google: también preguntan a la IA, comparan marcas, descubren productos y toman decisiones desde respuestas conversacionales.</p>
+
+        <div class="mini-list">
+          <div class="mini-item"><span>✓</span> Estrategia SEO orientada a negocio</div>
+          <div class="mini-item"><span>✓</span> Optimización semántica para IA</div>
+          <div class="mini-item"><span>✓</span> Reporting en ChatGPT, Gemini y otros LLMs</div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="nueva-busqueda">
+      <div class="soft-box">
+        <div class="section-label">Nuevo comportamiento de búsqueda</div>
+        <h2>Los usuarios ya no solo buscan en Google: también preguntan a la inteligencia artificial</h2>
+
+        <p>La forma en la que las personas buscan información está cambiando. Durante años, la estrategia SEO se ha centrado principalmente en aparecer en Google y Bing, pero hoy muchos usuarios también consultan herramientas de inteligencia artificial como <strong>ChatGPT</strong>, <strong>Gemini</strong>, <strong>Perplexity</strong>, <strong>Copilot</strong> o <strong>Grok</strong> para comparar opciones, resolver dudas, descubrir marcas y tomar decisiones de compra.</p>
+
+        <p>Esto significa que las marcas ya no compiten solo por aparecer en una página de resultados tradicional. También necesitan ser entendidas, recomendadas y asociadas correctamente en los nuevos canales donde los usuarios buscan, preguntan y deciden.</p>
+
+        <p>Como consultora SEO y GEO, trabajo para adaptar la estrategia orgánica a esta nueva realidad: seguir posicionando en buscadores tradicionales, pero también preparar la web, los contenidos, las entidades, los datos estructurados y la autoridad de marca para mejorar su presencia en entornos de IA.</p>
+      </div>
+    </section>
+
+    <section id="que-es-geo">
+      <div class="section-head">
+        <div class="section-label">Qué es GEO</div>
+        <h2>Qué es GEO y por qué importa en una estrategia SEO actual</h2>
+        <p class="intro">GEO significa Generative Engine Optimization. Es la optimización pensada para que una marca, web o contenido pueda ser interpretado, citado o recomendado por motores generativos y sistemas de inteligencia artificial.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>SEO tradicional</h3>
+          <p>Busca mejorar la visibilidad orgánica de una web en buscadores como Google o Bing mediante técnica, contenidos, autoridad, arquitectura e intención de búsqueda.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>GEO</h3>
+          <p>Trabaja cómo los sistemas generativos entienden una marca, sus servicios, sus contenidos, sus entidades y su autoridad temática dentro de un contexto.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Posicionamiento en LLMs</h3>
+          <p>No funciona como un ranking clásico. Se basa en señales de claridad, consistencia, autoridad, contexto, contenido útil, presencia digital y comprensión semántica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="llms">
+      <div class="feature">
+        <div>
+          <div class="section-label">LLMs e IA</div>
+          <h2>Qué significa aparecer en ChatGPT, Gemini y respuestas generativas</h2>
+
+          <p>Aparecer en entornos de IA no consiste solo en tener una página indexada. También implica que tu marca sea comprensible, coherente y fácil de asociar con temas, servicios, productos y necesidades concretas.</p>
+
+          <p>Por eso una estrategia SEO y GEO debe trabajar la estructura de la web, los contenidos, la autoridad temática, los datos estructurados, la presencia de marca y la forma en la que explicas tus servicios.</p>
+
+          <p>Antes de trabajar una estrategia GEO avanzada, muchas marcas necesitan una <a href="/auditoria-seo/"><strong>auditoría SEO</strong></a> para detectar si su web está preparada a nivel técnico, semántico y de contenidos.</p>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Claridad de marca</strong>
+            Explicar quién eres, qué haces, para quién trabajas y qué problemas resuelves.
+          </div>
+
+          <div class="feature-item">
+            <strong>Entidades y contexto</strong>
+            Reforzar temas, servicios, categorías, personas, marca y relaciones semánticas.
+          </div>
+
+          <div class="feature-item">
+            <strong>Datos estructurados</strong>
+            Ayudar a buscadores y sistemas de IA a interpretar mejor páginas, servicios, FAQs y contenidos.
+          </div>
+
+          <div class="feature-item">
+            <strong>Contenido útil</strong>
+            Crear respuestas claras, expertas y orientadas a intención de búsqueda real.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="estrategia">
+      <div class="section-head">
+        <div class="section-label">Estrategia</div>
+        <h2>Cómo se trabaja una estrategia SEO y GEO</h2>
+        <p class="intro">La estrategia no va de perseguir trucos para aparecer en IA, sino de construir una presencia orgánica sólida, entendible y útil para buscadores, modelos de lenguaje y usuarios.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Diagnóstico SEO y semántico</h3>
+          <p>Revisión de indexación, arquitectura, contenido, enlazado interno, datos estructurados, entidades, autoridad temática y claridad de marca.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Arquitectura de contenidos</h3>
+          <p>Organización de servicios, categorías, landings, contenidos informacionales, FAQs, clusters y páginas estratégicas para responder mejor a la intención de búsqueda.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Datos estructurados y entidades</h3>
+          <p>Implementación o mejora de schemas para reforzar servicios, persona, organización, páginas, productos, FAQs, breadcrumbs y relaciones semánticas.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">04</div>
+          <h3>Contenido orientado a IA</h3>
+          <p>Textos claros, útiles, completos y bien estructurados para que Google, Bing y sistemas generativos entiendan mejor una marca y sus respuestas.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">05</div>
+          <h3>Presencia y autoridad digital</h3>
+          <p>Coherencia de marca, menciones, perfiles, enlazado, señales externas y consistencia entre lo que la web dice y lo que otros entornos entienden.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">06</div>
+          <h3>Reporting SEO y GEO</h3>
+          <p>Análisis de visibilidad orgánica, consultas, páginas con potencial, presencia de marca en ChatGPT, Gemini, Perplexity, Copilot, Grok y oportunidades de mejora en resultados de IA.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reporting">
+      <div class="section-head">
+        <div class="section-label">Reporting SEO y GEO</div>
+        <h2>Análisis y reporting para saber si tu marca aparece en ChatGPT, Gemini y otros LLMs</h2>
+        <p class="intro">Una estrategia SEO y GEO no debería basarse en suposiciones. Además de optimizar la web, es importante analizar cómo aparece una marca en los principales entornos de inteligencia artificial y qué oportunidades existen para mejorar su presencia.</p>
+      </div>
+
+      <div class="feature">
+        <div>
+          <div class="section-label">Análisis en LLMs</div>
+          <h2>Qué analizo en un reporting GEO</h2>
+
+          <p>Reviso cómo responde la inteligencia artificial cuando un usuario pregunta por servicios, productos, marcas, comparativas o recomendaciones relacionadas con tu negocio, porque cada vez más decisiones empiezan en una conversación con IA y no solo en una búsqueda tradicional.</p>
+
+          <p>El objetivo es detectar si tu marca aparece, si es citada correctamente, si se entiende bien qué haces, qué competidores aparecen antes y qué señales podemos trabajar para mejorar tu presencia en buscadores y respuestas generativas.</p>
+
+          <p>Este análisis puede incluir entornos como <strong>ChatGPT</strong>, <strong>Gemini</strong>, <strong>Perplexity</strong>, <strong>Copilot</strong>, <strong>Grok</strong> y otros sistemas de IA relevantes según el sector y el tipo de búsqueda.</p>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Presencia de marca</strong>
+            Revisión de si la marca aparece cuando se hacen búsquedas o preguntas relacionadas con sus servicios, productos o categoría.
+          </div>
+
+          <div class="feature-item">
+            <strong>Comparativa con competidores</strong>
+            Análisis de qué marcas recomienda la IA, qué argumentos utiliza y por qué puede estar priorizando a la competencia.
+          </div>
+
+          <div class="feature-item">
+            <strong>Calidad de la respuesta</strong>
+            Evaluación de si la IA entiende correctamente la propuesta de valor, especialización, servicios, productos y autoridad de la marca.
+          </div>
+
+          <div class="feature-item">
+            <strong>Oportunidades de optimización</strong>
+            Recomendaciones para mejorar contenidos, entidades, datos estructurados, arquitectura semántica, FAQs, autoridad y señales externas.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="section-head">
+        <div class="section-label">Servicios</div>
+        <h2>Consultoría SEO y GEO para marcas, ecommerce y Shopify</h2>
+        <p class="intro">Puedo ayudarte a trabajar una estrategia que conecte SEO técnico, contenidos, datos estructurados, arquitectura semántica, reporting GEO y presencia en resultados de IA.</p>
+      </div>
+
+      <div class="two-col">
+        <ul class="list">
+          <li><strong>Consultoría GEO:</strong> análisis de cómo mejorar la presencia de una marca en respuestas generativas y LLMs.</li>
+          <li><strong>Reporting en IA:</strong> revisión de presencia de marca en ChatGPT, Gemini, Perplexity, Copilot, Grok y otros entornos relevantes.</li>
+          <li><strong>SEO técnico:</strong> revisión de indexación, rastreo, canonicals, arquitectura, rendimiento y estructura.</li>
+          <li><strong>Datos estructurados:</strong> schemas para reforzar entidades, servicios, páginas, productos, FAQs y organización.</li>
+        </ul>
+
+        <ul class="list">
+          <li><strong>Contenido semántico:</strong> estructura editorial para responder a intención de búsqueda y mejorar comprensión por IA.</li>
+          <li><strong>SEO ecommerce:</strong> estrategia para categorías, productos, blogs y landings orientadas a captación.</li>
+          <li><strong>Auditoría SEO:</strong> revisión técnica y estratégica para detectar si una web está preparada para buscadores y nuevos entornos de IA.</li>
+          <li><strong>SEO para Shopify:</strong> si tienes una tienda en este CMS, puedes ver mi enfoque específico de <a href="/seo-shopify/"><strong>SEO para Shopify</strong></a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="section-head">
+        <div class="section-label">FAQs</div>
+        <h2>Preguntas frecuentes sobre SEO, GEO y posicionamiento en IA</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>¿Qué es GEO en SEO?</summary>
+          <p>GEO significa Generative Engine Optimization. Es una forma de optimización orientada a mejorar cómo una marca, web o contenido puede ser entendido, citado o recomendado por motores generativos y sistemas de inteligencia artificial.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué diferencia hay entre SEO y GEO?</summary>
+          <p>El SEO busca mejorar la visibilidad orgánica en buscadores como Google o Bing. El GEO amplía esa estrategia para mejorar la presencia de una marca en respuestas generadas por IA, asistentes conversacionales y modelos de lenguaje.</p>
+        </details>
+
+        <details>
+          <summary>¿Se puede posicionar una marca en ChatGPT?</summary>
+          <p>No se posiciona igual que en Google, pero sí se puede trabajar la claridad de marca, la autoridad temática, los contenidos, las entidades, la presencia digital y los datos estructurados para facilitar que los sistemas de IA entiendan mejor una marca y sus servicios.</p>
+        </details>
+
+        <details>
+          <summary>¿Se puede medir si una marca aparece en ChatGPT, Gemini o Perplexity?</summary>
+          <p>Sí. Aunque no se mide igual que el SEO tradicional, se pueden hacer análisis y reporting GEO para revisar si una marca aparece en respuestas de IA, qué competidores se mencionan, cómo se describe la marca, qué fuentes parecen influir y qué oportunidades existen para mejorar la presencia en ChatGPT, Gemini, Perplexity, Copilot, Grok y otros entornos generativos.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué incluye una estrategia SEO y GEO?</summary>
+          <p>Puede incluir auditoría SEO, arquitectura semántica, contenidos orientados a intención de búsqueda, datos estructurados, enlazado interno, optimización de entidades, autoridad temática, reporting en LLMs, medición en Google Search Console y análisis de oportunidades en resultados de IA.</p>
+        </details>
+
+        <details>
+          <summary>¿El GEO sustituye al SEO?</summary>
+          <p>No. El GEO no sustituye al SEO. Lo complementa. Una web con problemas técnicos, mala arquitectura o contenidos poco claros tendrá más dificultades tanto en buscadores tradicionales como en entornos de IA.</p>
+        </details>
+
+        <details>
+          <summary>¿Por qué es importante adaptar el SEO a la inteligencia artificial?</summary>
+          <p>Porque los usuarios están cambiando la forma de informarse y comprar. Ya no consultan solo Google o Bing: también usan ChatGPT, Gemini, Perplexity, Copilot, Grok y otros sistemas de IA para comparar opciones, resolver dudas y tomar decisiones. Las marcas necesitan adaptarse a esos nuevos canales de búsqueda.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="cta-section">
+      <div class="cta">
+        <h2>¿Quieres preparar tu marca para buscadores y resultados de IA?</h2>
+        <p>Rellena el formulario y cuéntame qué web quieres trabajar. Revisaré si puedo ayudarte con una estrategia SEO y GEO orientada a visibilidad, autoridad, captación y posicionamiento en nuevos entornos de búsqueda.</p>
+        <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Solicitar diagnóstico SEO y GEO</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Mariana Amaya · Consultora SEO y GEO Freelance</p>
+    <p>
+      <a href="mailto:mariana.amayacanas@gmail.com">mariana.amayacanas@gmail.com</a> ·
+      <a href="https://es.linkedin.com/in/mariana-amaya" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
