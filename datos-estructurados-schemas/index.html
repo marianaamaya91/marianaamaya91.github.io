@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Datos estructurados y Schema SEO para Google e IA | Mariana Amaya</title>
+  <meta name="description" content="Consultoría de datos estructurados y Schema SEO para mejorar la comprensión de tu web en Google, Bing y resultados de IA. Implementación según tipo de URL, sector y objetivo SEO.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://marianaamaya91.github.io/datos-estructurados-schema-seo/">
+
+  <link rel="icon" href="/favicon-mariana-amaya-seo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon-mariana-amaya-seo.svg">
+
+  <meta property="og:title" content="Datos estructurados y Schema SEO para Google e IA | Mariana Amaya">
+  <meta property="og:description" content="Consultoría de datos estructurados y Schema SEO para mejorar cómo Google, Bing y sistemas de IA entienden tu web, tus servicios, productos y contenidos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marianaamaya91.github.io/datos-estructurados-schema-seo/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png">
+  <meta property="og:image:alt" content="Mariana Amaya, consultora SEO especializada en datos estructurados y Schema SEO">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Datos estructurados y Schema SEO para Google e IA | Mariana Amaya">
+  <meta name="twitter:description" content="Implementación y auditoría de datos estructurados para SEO, ecommerce, Shopify, contenidos, productos, servicios y resultados de IA.">
+  <meta name="twitter:image" content="https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png">
+
+  <style>
+    :root {
+      --bg: #f7f3ee;
+      --dark: #111827;
+      --dark-soft: #1f2937;
+      --text: #273142;
+      --muted: #667085;
+      --card: #ffffff;
+      --line: #eadfd4;
+      --accent: #b36b4f;
+      --accent-dark: #884732;
+      --accent-soft: #f4ded4;
+      --cream: #fffaf5;
+      --shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 250, 245, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      line-height: 1.15;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark-soft);
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-dark);
+    }
+
+    .nav-cta {
+      background: var(--dark);
+      color: #ffffff !important;
+      padding: 10px 16px;
+      border-radius: 999px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 92px 22px 76px;
+      background:
+        radial-gradient(circle at top left, rgba(179, 107, 79, 0.22), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(17, 24, 39, 0.16), transparent 32%),
+        linear-gradient(135deg, #fffaf5 0%, #f7f3ee 45%, #efe2d9 100%);
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--accent-dark);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.05);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 24px 0 22px;
+      color: var(--dark);
+      font-size: clamp(40px, 5.5vw, 64px);
+      line-height: 1;
+      letter-spacing: -2.4px;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      font-size: 20px;
+      color: #3f4a5f;
+      margin: 0 0 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--dark);
+      color: #ffffff;
+      box-shadow: 0 18px 30px rgba(17, 24, 39, 0.18);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--dark);
+      border: 1px solid var(--line);
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(234,223,212,0.9);
+      border-radius: 34px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-card h2 {
+      font-size: 28px;
+      margin: 0 0 12px;
+      color: var(--dark);
+      letter-spacing: -0.7px;
+      line-height: 1.15;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .mini-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      font-weight: 700;
+      color: var(--dark-soft);
+    }
+
+    .mini-item span {
+      color: var(--accent-dark);
+      flex: 0 0 auto;
+    }
+
+    section {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 78px 22px;
+      display: block;
+      clear: both;
+    }
+
+    .section-head {
+      max-width: 880px;
+      margin-bottom: 34px;
+    }
+
+    .section-label {
+      color: var(--accent-dark);
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--dark);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0;
+      max-width: 820px;
+    }
+
+    .grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(260px, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card {
+      min-width: 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.05);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--dark);
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .card a,
+    .soft-box a,
+    .list a {
+      color: var(--accent-dark);
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+      gap: 34px;
+      align-items: start;
+      background: var(--dark);
+      color: #ffffff;
+      border-radius: 34px;
+      padding: 46px;
+      box-shadow: var(--shadow);
+    }
+
+    .feature h2 {
+      color: #ffffff;
+    }
+
+    .feature p {
+      color: #d6dce8;
+    }
+
+    .feature a {
+      color: #ffffff;
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .feature-item {
+      min-width: 0;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 20px;
+      color: #d6dce8;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #ffffff;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .soft-box {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 42px;
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.04);
+    }
+
+    .soft-box p {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .list li {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+      color: var(--text);
+    }
+
+    .list li strong {
+      color: var(--dark);
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--dark);
+      font-size: 18px;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .cta-section {
+      padding-top: 30px;
+    }
+
+    .cta {
+      background:
+        radial-gradient(circle at top left, rgba(179, 107, 79, 0.35), transparent 34%),
+        linear-gradient(135deg, var(--dark) 0%, #263244 100%);
+      color: #ffffff;
+      text-align: center;
+      border-radius: 38px;
+      padding: 66px 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: #ffffff;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      color: #d6dce8;
+      font-size: 18px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #ffffff;
+      text-align: center;
+      padding: 34px 20px;
+    }
+
+    footer p {
+      margin: 6px 0;
+      color: #d6dce8;
+    }
+
+    footer a {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1100px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+      }
+
+      .feature {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-list {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-inner,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        display: block;
+      }
+
+      .brand {
+        margin-bottom: 12px;
+      }
+
+      .brand-logo {
+        width: 210px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 64px 18px 54px;
+      }
+
+      h1 {
+        letter-spacing: -1.4px;
+      }
+
+      .hero-lead {
+        font-size: 18px;
+      }
+
+      .hero-card,
+      .feature,
+      .soft-box,
+      .cta {
+        border-radius: 26px;
+        padding: 28px;
+      }
+
+      section {
+        padding: 58px 18px;
+      }
+
+      .grid,
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://marianaamaya91.github.io/#person",
+        "name": "Mariana Amaya",
+        "url": "https://marianaamaya91.github.io/",
+        "image": "https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png",
+        "email": "mailto:mariana.amayacanas@gmail.com",
+        "jobTitle": "Consultora SEO y GEO freelance especializada en datos estructurados y Schema SEO",
+        "description": "Consultora SEO y GEO freelance especializada en datos estructurados, Schema SEO, JSON-LD, Shopify, ecommerce, SEO técnico, contenidos, migraciones SEO y optimización para resultados de inteligencia artificial.",
+        "sameAs": [
+          "https://es.linkedin.com/in/mariana-amaya"
+        ],
+        "knowsAbout": [
+          "Datos estructurados",
+          "Schema SEO",
+          "Schema.org",
+          "JSON-LD",
+          "SEO técnico",
+          "SEO para Shopify",
+          "SEO ecommerce",
+          "Schema para productos",
+          "Schema para colecciones",
+          "Schema para artículos",
+          "Schema para vídeos",
+          "Schema para negocio local",
+          "BreadcrumbList",
+          "Product schema",
+          "Organization schema",
+          "WebSite schema",
+          "FAQPage schema",
+          "GEO",
+          "Inteligencia artificial aplicada al SEO"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/#service",
+        "name": "Consultoría de datos estructurados y Schema SEO",
+        "url": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/",
+        "description": "Servicio de consultoría, auditoría e implementación de datos estructurados y Schema SEO para mejorar la comprensión de una web en Google, Bing y resultados de inteligencia artificial.",
+        "provider": {
+          "@id": "https://marianaamaya91.github.io/#person"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": [
+          "Datos estructurados",
+          "Schema SEO",
+          "JSON-LD",
+          "SEO técnico",
+          "Schema para Shopify",
+          "Schema para ecommerce",
+          "Schema para productos",
+          "Schema para colecciones",
+          "Schema para artículos",
+          "Schema para vídeos",
+          "Schema para negocio local",
+          "GEO y optimización semántica"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de datos estructurados y Schema SEO",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Auditoría de datos estructurados",
+              "availability": "https://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Auditoría de datos estructurados",
+                "description": "Revisión de schemas actuales, errores, duplicidades, ausencias y oportunidades de mejora según tipo de URL y objetivo SEO."
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Implementación de Schema SEO",
+              "availability": "https://schema.org/InStock",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Implementación de Schema SEO",
+                "description": "Definición e implementación de datos estructurados en JSON-LD para páginas, productos, colecciones, artículos, vídeos, FAQs y entidades de marca."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://marianaamaya91.github.io/#website",
+        "url": "https://marianaamaya91.github.io/",
+        "name": "Mariana Amaya | Consultora SEO y GEO Freelance",
+        "publisher": {
+          "@id": "https://marianaamaya91.github.io/#person"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/#webpage",
+        "url": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/",
+        "name": "Datos estructurados y Schema SEO para Google e IA | Mariana Amaya",
+        "description": "Consultoría de datos estructurados y Schema SEO para mejorar la comprensión de una web en Google, Bing y resultados de IA.",
+        "isPartOf": {
+          "@id": "https://marianaamaya91.github.io/#website"
+        },
+        "about": {
+          "@id": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/#service"
+        },
+        "mainEntity": {
+          "@id": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/#service"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://marianaamaya91.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Datos estructurados y Schema SEO",
+            "item": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://marianaamaya91.github.io/datos-estructurados-schema-seo/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué son los datos estructurados en SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los datos estructurados son fragmentos de código, normalmente en formato JSON-LD, que ayudan a los buscadores a entender mejor el contenido de una página, sus entidades, productos, servicios, artículos, vídeos, FAQs, breadcrumbs o información de negocio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es Schema.org?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Schema.org es un vocabulario estándar utilizado para marcar información de una web de forma estructurada. Ayuda a buscadores como Google o Bing a interpretar mejor el tipo de contenido y las relaciones entre entidades."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Los schemas mejoran el posicionamiento SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los datos estructurados no garantizan mejores posiciones por sí solos, pero ayudan a mejorar la comprensión de la página, pueden habilitar resultados enriquecidos y refuerzan señales semánticas importantes dentro de una estrategia SEO técnica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué relación tienen los datos estructurados con GEO e IA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los datos estructurados ayudan a reforzar la comprensión semántica de una marca, sus servicios, productos y contenidos. Esto es relevante para GEO porque los sistemas de inteligencia artificial necesitan interpretar entidades, relaciones y contexto con claridad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Todas las URLs necesitan el mismo schema?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Cada tipo de URL necesita datos estructurados adaptados a su función. Una home, una colección, un producto, una página de servicio, un artículo, una página local o una página con vídeo pueden requerir schemas distintos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué schemas son importantes en Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En Shopify suelen ser importantes schemas como Organization, WebSite, BreadcrumbList, CollectionPage, ItemList, Product, BlogPosting, Article, VideoObject y FAQPage, siempre adaptados al tipo de plantilla y evitando duplicidades."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="/" aria-label="Inicio Mariana Amaya">
+        <img src="/logo-mariana-amaya-seo.svg" alt="Mariana Amaya, consultora SEO y GEO freelance" class="brand-logo" width="220" height="48">
+      </a>
+
+      <div class="nav-links">
+        <a href="#que-son">Qué son</a>
+        <a href="#tipos">Tipos de schema</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#faq">FAQs</a>
+        <a class="nav-cta" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Diagnóstico SEO</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Datos estructurados · Schema SEO · JSON-LD · GEO</span>
+        <h1>Datos estructurados y Schema SEO para mejorar cómo Google e IA entienden tu web</h1>
+        <p class="hero-lead">Ayudo a ecommerce, tiendas Shopify y marcas digitales a implementar datos estructurados según el tipo de URL, el sector y el objetivo SEO para reforzar la comprensión semántica en Google, Bing y resultados de inteligencia artificial.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Solicitar diagnóstico SEO</a>
+          <a class="btn btn-secondary" href="mailto:mariana.amayacanas@gmail.com">Escribirme por email</a>
+        </div>
+
+        <div class="trust-row" aria-label="Especialidades de datos estructurados">
+          <span class="pill">Schema SEO</span>
+          <span class="pill">JSON-LD</span>
+          <span class="pill">Shopify</span>
+          <span class="pill">Ecommerce</span>
+          <span class="pill">SEO + GEO</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resumen del servicio de datos estructurados">
+        <h2>No se trata de poner schemas por ponerlos: cada URL necesita el marcado correcto</h2>
+        <p>Una home, una colección, un producto, un artículo, una página de servicio o una página local no comunican lo mismo. Por eso los datos estructurados deben adaptarse a cada plantilla, sector e intención de búsqueda.</p>
+
+        <div class="mini-list">
+          <div class="mini-item"><span>✓</span> Auditoría de schemas actuales</div>
+          <div class="mini-item"><span>✓</span> Definición de schemas por tipo de URL</div>
+          <div class="mini-item"><span>✓</span> Implementación orientada a SEO, GEO e IA</div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="que-son">
+      <div class="section-head">
+        <div class="section-label">Qué son</div>
+        <h2>Qué son los datos estructurados o schemas</h2>
+        <p class="intro">Los datos estructurados son fragmentos de código que ayudan a los buscadores a interpretar mejor el contenido de una página y las entidades que aparecen en ella.</p>
+      </div>
+
+      <div class="soft-box">
+        <p>En SEO, los datos estructurados suelen implementarse en formato <strong>JSON-LD</strong> siguiendo el vocabulario de <strong>Schema.org</strong>. Su función es aportar contexto adicional a Google, Bing y otros sistemas para que entiendan si una página habla de una marca, un producto, una categoría, un servicio, un artículo, un vídeo, una ubicación, una pregunta frecuente o una persona.</p>
+
+        <p>Antes de implementar nuevos schemas, conviene realizar una <a href="/auditoria-seo/"><strong>auditoría SEO</strong></a> para detectar si existen datos estructurados duplicados, incompletos, mal ubicados o incoherentes con el contenido real de la página.</p>
+      </div>
+    </section>
+
+    <section id="importancia-seo">
+      <div class="section-head">
+        <div class="section-label">Importancia SEO</div>
+        <h2>Por qué los datos estructurados son importantes para SEO</h2>
+        <p class="intro">Los schemas no sustituyen al contenido, la arquitectura ni al SEO técnico, pero ayudan a que los buscadores comprendan mejor qué representa cada URL dentro de una web.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Mejoran la comprensión semántica</h3>
+          <p>Ayudan a Google y Bing a entender entidades, relaciones, tipo de página, productos, servicios, autores, breadcrumbs, vídeos y contenidos clave.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Refuerzan la arquitectura SEO</h3>
+          <p>Un buen marcado puede ayudar a conectar la home, colecciones, productos, artículos, servicios y páginas informativas dentro de una estructura más clara.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Pueden activar resultados enriquecidos</h3>
+          <p>Dependiendo del tipo de contenido y las directrices de Google, algunos schemas pueden optar a formatos enriquecidos como productos, FAQs, vídeos o breadcrumbs.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">04</div>
+          <h3>Reducen ambigüedad</h3>
+          <p>Los datos estructurados ayudan a aclarar si una página representa un producto, un servicio, una organización, un artículo, una colección o una entidad local.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">05</div>
+          <h3>Mejoran la consistencia de marca</h3>
+          <p>Permiten reforzar información como nombre de marca, logo, perfiles sociales, servicios, áreas de especialización, autoría y datos de contacto.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">06</div>
+          <h3>Ayudan al SEO técnico</h3>
+          <p>Una revisión de schemas permite detectar duplicidades, errores, propiedades incompletas, datos incoherentes o marcado que no corresponde al contenido visible.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="geo">
+      <div class="feature">
+        <div>
+          <div class="section-label">SEO + GEO</div>
+          <h2>Qué relación tienen los schemas con GEO y resultados de IA</h2>
+
+          <p>Los datos estructurados también ayudan a reforzar la comprensión semántica de una marca, algo cada vez más importante dentro de una estrategia de <a href="/seo-y-geo/"><strong>SEO y GEO</strong></a> orientada a buscadores, LLMs y resultados de inteligencia artificial.</p>
+
+          <p>Los sistemas de IA necesitan entender quién eres, qué haces, qué vendes, qué servicios ofreces, en qué temas eres relevante y cómo se relacionan tus contenidos. Los schemas no hacen todo ese trabajo por sí solos, pero pueden ayudar a reducir ambigüedad y reforzar entidades clave.</p>
+
+          <p>Por eso, cuando se trabaja GEO, los datos estructurados deben estar alineados con la arquitectura, los contenidos, la intención de búsqueda, las entidades y la propuesta de valor de la marca.</p>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Entidades de marca</strong>
+            Persona, organización, logo, perfiles sociales, servicios, ubicación, sector y especialización.
+          </div>
+
+          <div class="feature-item">
+            <strong>Contexto semántico</strong>
+            Relación entre páginas, productos, categorías, servicios, artículos, vídeos y preguntas frecuentes.
+          </div>
+
+          <div class="feature-item">
+            <strong>Contenido interpretable</strong>
+            Marcado coherente con lo que el usuario puede leer y con la intención real de cada URL.
+          </div>
+
+          <div class="feature-item">
+            <strong>Preparación para IA</strong>
+            Estructura más clara para buscadores, respuestas generativas y sistemas que interpretan información de la web.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tipos">
+      <div class="section-head">
+        <div class="section-label">Tipos de schema</div>
+        <h2>No todas las URLs necesitan el mismo schema</h2>
+        <p class="intro">Uno de los errores más habituales es aplicar el mismo marcado a toda la web. Los datos estructurados deben definirse según el tipo de página, el contenido visible y el objetivo SEO de cada URL.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">H</div>
+          <h3>Schema para la home</h3>
+          <p>La home suele necesitar schemas como Organization, WebSite, WebPage y, si aplica, datos de marca, logo, perfiles sociales, servicios principales y entidad principal.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">S</div>
+          <h3>Schema para páginas de servicio</h3>
+          <p>Una página de servicio puede trabajar WebPage, Service, ProfessionalService, FAQPage y BreadcrumbList según su contenido e intención de búsqueda.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">E</div>
+          <h3>Schema para ecommerce y Shopify</h3>
+          <p>En tiendas Shopify, los datos estructurados deben adaptarse a productos, colecciones, blogs, páginas y breadcrumbs. Por eso el trabajo de <a href="/seo-shopify/"><strong>SEO para Shopify</strong></a> debe incluir una revisión específica de schemas.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">P</div>
+          <h3>Schema para productos</h3>
+          <p>Las fichas de producto pueden necesitar Product, Offer, disponibilidad, precio, imagen, descripción, marca, SKU y otras propiedades siempre que sean coherentes con la información real.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">C</div>
+          <h3>Schema para colecciones o categorías</h3>
+          <p>Las colecciones pueden usar CollectionPage, ItemList, BreadcrumbList y datos de productos cuando la estructura y el contenido lo permiten.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">B</div>
+          <h3>Schema para blogs y artículos</h3>
+          <p>Los artículos pueden usar BlogPosting o Article, autor, fecha, imagen, publisher, headline, descripción y breadcrumbs para reforzar contexto editorial.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">V</div>
+          <h3>Schema para vídeos</h3>
+          <p>Cuando una URL incluye vídeo relevante, VideoObject puede ayudar a describir título, descripción, miniatura, fecha de publicación, duración y URL del contenido.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">L</div>
+          <h3>Schema para negocios locales</h3>
+          <p>Las páginas locales pueden necesitar LocalBusiness, dirección, teléfono, horario, imagen, mapa, área de servicio y datos específicos según el tipo de negocio.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">FAQ</div>
+          <h3>Schema para FAQs y breadcrumbs</h3>
+          <p>FAQPage y BreadcrumbList pueden aportar claridad cuando las preguntas y la ruta de navegación están visibles y son coherentes con el contenido de la página.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="metodologia">
+      <div class="section-head">
+        <div class="section-label">Metodología</div>
+        <h2>Cómo trabajo una estrategia de datos estructurados</h2>
+        <p class="intro">Implementar schemas bien no consiste en copiar y pegar código. Requiere revisar la web, entender sus plantillas, detectar duplicidades y definir qué marcado aporta valor en cada tipo de URL.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Auditoría de schemas actuales</h3>
+          <p>Reviso qué datos estructurados existen, dónde aparecen, si están duplicados, si contienen errores y si coinciden con el contenido real de cada página.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Detección de errores y duplicidades</h3>
+          <p>Analizo conflictos entre schemas del theme, apps, plugins, plantillas, snippets o código manual que puedan generar marcado incoherente.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Definición por tipo de URL</h3>
+          <p>Determino qué schema necesita la home, cada página de servicio, colección, producto, artículo, vídeo, FAQ, página local o plantilla específica.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">04</div>
+          <h3>Implementación o documentación técnica</h3>
+          <p>Puedo preparar el código JSON-LD, documentar la lógica para desarrollo o acompañar la implementación según el CMS, theme o equipo técnico.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">05</div>
+          <h3>Validación con herramientas</h3>
+          <p>Compruebo el marcado con herramientas de validación, rich results, inspección de URLs y revisión del HTML final renderizado.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">06</div>
+          <h3>Seguimiento en Search Console</h3>
+          <p>Reviso errores, mejoras detectadas, tipos de resultados enriquecidos, breadcrumbs, productos, vídeos u otras señales disponibles en Google Search Console.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="errores">
+      <div class="section-head">
+        <div class="section-label">Errores frecuentes</div>
+        <h2>Errores habituales en datos estructurados</h2>
+        <p class="intro">Un mal uso de schemas puede aportar poco valor o incluso generar señales confusas. Por eso conviene revisarlos con criterio SEO, técnico y semántico.</p>
+      </div>
+
+      <div class="two-col">
+        <ul class="list">
+          <li><strong>Duplicar schemas:</strong> tener Organization, BreadcrumbList, Product o Article repetidos por theme, app y código manual.</li>
+          <li><strong>Marcar contenido que no existe:</strong> añadir FAQs, valoraciones, precios o vídeos que no son visibles o no corresponden con la página.</li>
+          <li><strong>Usar el mismo schema para todo:</strong> aplicar una plantilla genérica sin diferenciar home, productos, colecciones, servicios o artículos.</li>
+          <li><strong>Datos incoherentes:</strong> marcar una página como producto cuando realmente es una colección o una landing informativa.</li>
+        </ul>
+
+        <ul class="list">
+          <li><strong>No conectar entidades:</strong> no relacionar persona, organización, web, servicio, producto, artículo o negocio local.</li>
+          <li><strong>Olvidar breadcrumbs:</strong> perder una señal útil para reforzar jerarquía y navegación.</li>
+          <li><strong>Implementar sin validar:</strong> publicar JSON-LD sin revisar errores, advertencias o renderizado final.</li>
+          <li><strong>No adaptar a Shopify:</strong> ignorar cómo el theme, las apps y las plantillas generan datos estructurados automáticamente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="shopify">
+      <div class="feature">
+        <div>
+          <div class="section-label">Shopify y ecommerce</div>
+          <h2>Datos estructurados para Shopify, ecommerce y webs con muchas plantillas</h2>
+
+          <p>En ecommerce, los datos estructurados son especialmente importantes porque cada tipo de URL cumple una función distinta: la home presenta la marca, las colecciones agrupan productos, las fichas venden, el blog capta demanda informacional y las páginas de servicio explican valor.</p>
+
+          <p>En Shopify, además, hay que revisar qué genera el theme, qué añaden las apps y qué se está implementando manualmente para evitar duplicidades o marcado incompleto.</p>
+
+          <p>Si estás migrando o rediseñando tu tienda, los schemas también deberían revisarse dentro de una <a href="/migracion-seo-shopify/"><strong>migración SEO a Shopify</strong></a>, para que la nueva web salga publicada con una base técnica más sólida.</p>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Productos</strong>
+            Product, Offer, imagen, descripción, disponibilidad, precio y marca.
+          </div>
+
+          <div class="feature-item">
+            <strong>Colecciones</strong>
+            CollectionPage, ItemList, BreadcrumbList y relación con productos.
+          </div>
+
+          <div class="feature-item">
+            <strong>Blog</strong>
+            BlogPosting, Article, autor, publisher, fecha, imagen y headline.
+          </div>
+
+          <div class="feature-item">
+            <strong>Marca</strong>
+            Organization, WebSite, Person, servicios, redes sociales y entidad principal.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="para-quien">
+      <div class="section-head">
+        <div class="section-label">Para quién</div>
+        <h2>Para quién es este servicio de datos estructurados y Schema SEO</h2>
+        <p class="intro">Este servicio es útil para proyectos que necesitan mejorar la claridad técnica y semántica de su web, especialmente si trabajan SEO, ecommerce, Shopify, contenidos o GEO.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Tiendas Shopify</h3>
+          <p>Para ecommerce que necesitan revisar Product, CollectionPage, BreadcrumbList, BlogPosting, Organization, WebSite y otros schemas generados por el theme o apps.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Marcas con servicios</h3>
+          <p>Para webs que necesitan explicar mejor qué ofrecen, para quién trabajan, qué especialización tienen y cómo conectar páginas de servicio con la entidad de marca.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Webs con problemas técnicos</h3>
+          <p>Para proyectos con errores de datos estructurados, duplicidades, schemas incompletos, breadcrumbs perdidos o marcado incoherente.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">04</div>
+          <h3>Blogs y medios</h3>
+          <p>Para contenidos editoriales que necesitan reforzar Article, BlogPosting, autoría, publisher, imágenes, fechas y estructura semántica.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">05</div>
+          <h3>Negocios locales</h3>
+          <p>Para webs con páginas de ubicación, salones, tiendas físicas, clínicas, restaurantes o negocios con datos locales que deben marcarse correctamente.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">06</div>
+          <h3>Proyectos orientados a IA</h3>
+          <p>Para marcas que quieren reforzar su presencia semántica dentro de una estrategia SEO y GEO pensada para buscadores y resultados generativos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="section-head">
+        <div class="section-label">FAQs</div>
+        <h2>Preguntas frecuentes sobre datos estructurados y Schema SEO</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>¿Qué son los datos estructurados en SEO?</summary>
+          <p>Los datos estructurados son fragmentos de código, normalmente en formato JSON-LD, que ayudan a los buscadores a entender mejor el contenido de una página, sus entidades, productos, servicios, artículos, vídeos, FAQs, breadcrumbs o información de negocio.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué es Schema.org?</summary>
+          <p>Schema.org es un vocabulario estándar utilizado para marcar información de una web de forma estructurada. Ayuda a buscadores como Google o Bing a interpretar mejor el tipo de contenido y las relaciones entre entidades.</p>
+        </details>
+
+        <details>
+          <summary>¿Los schemas mejoran el posicionamiento SEO?</summary>
+          <p>Los datos estructurados no garantizan mejores posiciones por sí solos, pero ayudan a mejorar la comprensión de la página, pueden habilitar resultados enriquecidos y refuerzan señales semánticas importantes dentro de una estrategia SEO técnica.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué relación tienen los datos estructurados con GEO e IA?</summary>
+          <p>Los datos estructurados ayudan a reforzar la comprensión semántica de una marca, sus servicios, productos y contenidos. Esto es relevante para GEO porque los sistemas de inteligencia artificial necesitan interpretar entidades, relaciones y contexto con claridad.</p>
+        </details>
+
+        <details>
+          <summary>¿Todas las URLs necesitan el mismo schema?</summary>
+          <p>No. Cada tipo de URL necesita datos estructurados adaptados a su función. Una home, una colección, un producto, una página de servicio, un artículo, una página local o una página con vídeo pueden requerir schemas distintos.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué schemas son importantes en Shopify?</summary>
+          <p>En Shopify suelen ser importantes schemas como Organization, WebSite, BreadcrumbList, CollectionPage, ItemList, Product, BlogPosting, Article, VideoObject y FAQPage, siempre adaptados al tipo de plantilla y evitando duplicidades.</p>
+        </details>
+
+        <details>
+          <summary>¿Es mejor implementar datos estructurados manualmente o con una app?</summary>
+          <p>Depende del proyecto. En algunos casos una app puede ser suficiente, pero en ecommerce, Shopify o webs con plantillas específicas suele ser mejor revisar el marcado real y adaptar los schemas para evitar duplicidades, errores o datos genéricos.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="cta-section">
+      <div class="cta">
+        <h2>¿Quieres saber si tu web tiene los datos estructurados correctos?</h2>
+        <p>Rellena el formulario con tu web y cuéntame qué necesitas revisar. Analizaré si puedo ayudarte con una auditoría de schemas, implementación de JSON-LD, revisión técnica o estrategia de datos estructurados para SEO y GEO.</p>
+        <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Solicitar diagnóstico SEO</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Mariana Amaya · Consultora SEO y GEO Freelance</p>
+    <p>
+      <a href="mailto:mariana.amayacanas@gmail.com">mariana.amayacanas@gmail.com</a> ·
+      <a href="https://es.linkedin.com/in/mariana-amaya" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
