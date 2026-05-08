@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Consultora SEO Shopify Freelance | SEO para Shopify | Mariana Amaya</title>
+  <meta name="description" content="Consultora SEO Shopify especializada en ecommerce, auditorías, migraciones, colecciones, productos, datos estructurados y crecimiento orgánico. SEO para Shopify y otros CMS.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://marianaamaya91.github.io/seo-shopify/">
+
+  <link rel="icon" href="/favicon-mariana-amaya-seo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon-mariana-amaya-seo.svg">
+
+  <meta property="og:title" content="Consultora SEO Shopify Freelance | Mariana Amaya">
+  <meta property="og:description" content="SEO para Shopify con enfoque técnico, estratégico y orientado a negocio. Auditorías, migraciones, colecciones, productos, schemas y crecimiento orgánico.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://marianaamaya91.github.io/seo-shopify/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png">
+  <meta property="og:image:alt" content="Mariana Amaya, consultora SEO Shopify y GEO freelance">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consultora SEO Shopify Freelance | Mariana Amaya">
+  <meta name="twitter:description" content="Consultoría SEO para Shopify, ecommerce, auditorías, migraciones, datos estructurados y crecimiento orgánico.">
+  <meta name="twitter:image" content="https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png">
+
+  <style>
+    :root {
+      --bg: #f7f3ee;
+      --dark: #111827;
+      --dark-soft: #1f2937;
+      --text: #273142;
+      --muted: #667085;
+      --card: #ffffff;
+      --line: #eadfd4;
+      --accent: #b36b4f;
+      --accent-dark: #884732;
+      --accent-soft: #f4ded4;
+      --cream: #fffaf5;
+      --shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 250, 245, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      line-height: 1.15;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark-soft);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-dark);
+    }
+
+    .nav-cta {
+      background: var(--dark);
+      color: #ffffff !important;
+      padding: 10px 16px;
+      border-radius: 999px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 92px 22px 76px;
+      background:
+        radial-gradient(circle at top left, rgba(179, 107, 79, 0.22), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(17, 24, 39, 0.18), transparent 32%),
+        linear-gradient(135deg, #fffaf5 0%, #f7f3ee 45%, #efe2d9 100%);
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--accent-dark);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.05);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 24px 0 22px;
+      color: var(--dark);
+      font-size: clamp(42px, 6vw, 66px);
+      line-height: 0.98;
+      letter-spacing: -2.6px;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      font-size: 20px;
+      color: #3f4a5f;
+      margin: 0 0 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      font-weight: 800;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--dark);
+      color: #ffffff;
+      box-shadow: 0 18px 30px rgba(17, 24, 39, 0.18);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--dark);
+      border: 1px solid var(--line);
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      background: rgba(255,255,255,0.75);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.86);
+      border: 1px solid rgba(234,223,212,0.9);
+      border-radius: 34px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-card h2 {
+      font-size: 28px;
+      margin: 0 0 12px;
+      color: var(--dark);
+      letter-spacing: -0.7px;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .mini-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      font-weight: 700;
+      color: var(--dark-soft);
+    }
+
+    .mini-item span {
+      color: var(--accent-dark);
+    }
+
+    section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 78px 22px;
+    }
+
+    .section-head {
+      max-width: 880px;
+      margin-bottom: 34px;
+    }
+
+    .section-label {
+      color: var(--accent-dark);
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--dark);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -1.4px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.05);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--dark);
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 34px;
+      align-items: center;
+      background: var(--dark);
+      color: #ffffff;
+      border-radius: 34px;
+      padding: 42px;
+      box-shadow: var(--shadow);
+    }
+
+    .feature h2 {
+      color: #ffffff;
+    }
+
+    .feature p {
+      color: #d6dce8;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .feature-item {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .feature-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    .soft-box {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      padding: 42px;
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.04);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .list li {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 15px 16px;
+      color: var(--text);
+    }
+
+    .list li strong {
+      color: var(--dark);
+    }
+
+    .price {
+      margin-top: 22px !important;
+      font-size: 28px;
+      line-height: 1.1;
+      color: var(--dark) !important;
+      font-weight: 900;
+      letter-spacing: -0.8px;
+    }
+
+    .price-note {
+      margin-top: 8px !important;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .faq {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: var(--dark);
+      font-size: 18px;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .cta-section {
+      padding-top: 30px;
+    }
+
+    .cta {
+      background:
+        radial-gradient(circle at top left, rgba(179, 107, 79, 0.35), transparent 34%),
+        linear-gradient(135deg, var(--dark) 0%, #263244 100%);
+      color: #ffffff;
+      text-align: center;
+      border-radius: 38px;
+      padding: 66px 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .cta h2 {
+      color: #ffffff;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta p {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      color: #d6dce8;
+      font-size: 18px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #ffffff;
+      text-align: center;
+      padding: 34px 20px;
+    }
+
+    footer p {
+      margin: 6px 0;
+      color: #d6dce8;
+    }
+
+    footer a {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .hero-inner,
+      .feature,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        display: block;
+      }
+
+      .brand {
+        margin-bottom: 12px;
+      }
+
+      .brand-logo {
+        width: 210px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 64px 18px 54px;
+      }
+
+      h1 {
+        letter-spacing: -1.4px;
+      }
+
+      .hero-lead {
+        font-size: 18px;
+      }
+
+      .hero-card,
+      .feature,
+      .soft-box,
+      .cta {
+        border-radius: 26px;
+        padding: 28px;
+      }
+
+      section {
+        padding: 58px 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://marianaamaya91.github.io/#person",
+        "name": "Mariana Amaya",
+        "url": "https://marianaamaya91.github.io/",
+        "image": "https://marianaamaya91.github.io/mariana-amaya-consultora-seo-geo.png",
+        "email": "mailto:mariana.amayacanas@gmail.com",
+        "jobTitle": "Consultora SEO y GEO freelance especializada en Shopify y ecommerce",
+        "description": "Consultora SEO y GEO freelance especializada en Shopify, ecommerce, SEO técnico, contenidos, datos estructurados, migraciones SEO e inteligencia artificial aplicada a la búsqueda.",
+        "sameAs": [
+          "https://es.linkedin.com/in/mariana-amaya"
+        ],
+        "knowsAbout": [
+          "SEO",
+          "GEO",
+          "SEO técnico",
+          "SEO para Shopify",
+          "SEO ecommerce",
+          "Auditoría SEO Shopify",
+          "Migraciones SEO Shopify",
+          "Datos estructurados",
+          "Google Search Console",
+          "GA4",
+          "Bing",
+          "Search Generative Experience",
+          "Inteligencia artificial aplicada al SEO"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://marianaamaya91.github.io/seo-shopify/#service",
+        "name": "Consultoría SEO Shopify freelance",
+        "url": "https://marianaamaya91.github.io/seo-shopify/",
+        "description": "Servicio de consultoría SEO para Shopify, ecommerce, auditorías, migraciones, colecciones, productos, datos estructurados, contenidos y crecimiento orgánico.",
+        "provider": {
+          "@id": "https://marianaamaya91.github.io/#person"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "serviceType": [
+          "SEO Shopify",
+          "Consultoría SEO Shopify",
+          "Auditoría SEO Shopify",
+          "SEO técnico Shopify",
+          "Migraciones SEO a Shopify",
+          "SEO ecommerce",
+          "Datos estructurados para Shopify",
+          "Optimización de colecciones Shopify",
+          "Optimización de productos Shopify"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios SEO Shopify",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Auditoría SEO Shopify",
+              "priceCurrency": "EUR",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "EUR",
+                "minPrice": 350
+              },
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Auditoría SEO Shopify",
+                "description": "Revisión técnica y estratégica de una tienda Shopify para detectar problemas de rastreo, indexación, arquitectura, contenidos, colecciones, productos, datos estructurados y oportunidades SEO."
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Consultoría SEO Shopify estratégica",
+              "priceCurrency": "EUR",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "EUR",
+                "minPrice": 90
+              },
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consultoría SEO Shopify estratégica",
+                "description": "Sesiones de consultoría SEO para priorizar decisiones, revisar problemas técnicos, analizar Google Search Console, validar migraciones o definir acciones de crecimiento orgánico."
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Acompañamiento SEO Shopify mensual",
+              "priceCurrency": "EUR",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "EUR",
+                "minPrice": 450
+              },
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Acompañamiento SEO Shopify mensual",
+                "description": "Acompañamiento SEO mensual para tiendas Shopify con planificación, análisis, priorización, seguimiento y mejoras orientadas a crecimiento orgánico."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://marianaamaya91.github.io/#website",
+        "url": "https://marianaamaya91.github.io/",
+        "name": "Mariana Amaya | Consultora SEO y GEO Freelance",
+        "publisher": {
+          "@id": "https://marianaamaya91.github.io/#person"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://marianaamaya91.github.io/seo-shopify/#webpage",
+        "url": "https://marianaamaya91.github.io/seo-shopify/",
+        "name": "Consultora SEO Shopify Freelance | SEO para Shopify | Mariana Amaya",
+        "description": "Consultoría SEO para Shopify, ecommerce, auditorías, migraciones, colecciones, productos, datos estructurados y crecimiento orgánico.",
+        "isPartOf": {
+          "@id": "https://marianaamaya91.github.io/#website"
+        },
+        "about": {
+          "@id": "https://marianaamaya91.github.io/seo-shopify/#service"
+        },
+        "mainEntity": {
+          "@id": "https://marianaamaya91.github.io/seo-shopify/#service"
+        },
+        "inLanguage": "es-ES"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://marianaamaya91.github.io/seo-shopify/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://marianaamaya91.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO Shopify",
+            "item": "https://marianaamaya91.github.io/seo-shopify/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://marianaamaya91.github.io/seo-shopify/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué hace una consultora SEO Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una consultora SEO Shopify analiza y optimiza una tienda Shopify para mejorar su visibilidad orgánica. Puede trabajar rastreo, indexación, arquitectura, colecciones, productos, contenidos, enlazado interno, datos estructurados, migraciones y medición con Google Search Console y GA4."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué incluye una auditoría SEO Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una auditoría SEO Shopify puede incluir revisión de indexación, robots.txt, sitemap, canonicals, arquitectura, colecciones, productos, filtros, enlazado interno, contenidos, datos estructurados, breadcrumbs, rendimiento, Search Console y oportunidades de crecimiento orgánico."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿También trabajas SEO en otros CMS además de Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Aunque esta página está enfocada en SEO para Shopify, también trabajo SEO para ecommerce y webs en WordPress, WooCommerce, Prestashop, CMS a medida y otros entornos digitales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta una consultoría SEO Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los precios dependen del alcance del proyecto. Como referencia, una auditoría SEO puntual puede empezar desde 350 euros, la consultoría estratégica desde 90 euros por hora y el acompañamiento SEO mensual desde 450 euros al mes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo solicitar una revisión SEO de mi tienda Shopify?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes solicitar un diagnóstico SEO inicial a través del formulario de la web de Mariana Amaya o contactar por email para explicar el estado de tu tienda Shopify y tus objetivos de crecimiento orgánico."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="/" aria-label="Inicio Mariana Amaya">
+        <img src="/logo-mariana-amaya-seo.svg" alt="Mariana Amaya, consultora SEO y GEO freelance" class="brand-logo" width="220" height="48">
+      </a>
+
+      <div class="nav-links">
+        <a href="/">Inicio</a>
+        <a href="#servicio">Servicio</a>
+        <a href="#auditoria">Auditoría</a>
+        <a href="#cms">Otros CMS</a>
+        <a href="#precios">Precios</a>
+        <a class="nav-cta" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Diagnóstico SEO</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">SEO Shopify · Ecommerce · Migraciones · GEO</span>
+        <h1>Consultora SEO Shopify para ecommerce que quieren crecer en Google, Bing e IA</h1>
+        <p class="hero-lead">Ayudo a tiendas Shopify a detectar qué está frenando su posicionamiento orgánico y a priorizar acciones para mejorar colecciones, productos, arquitectura, indexación, contenidos, datos estructurados y oportunidades de venta.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Solicitar diagnóstico SEO Shopify</a>
+          <a class="btn btn-secondary" href="mailto:mariana.amayacanas@gmail.com">Escribirme por email</a>
+        </div>
+
+        <div class="trust-row" aria-label="Especialidades SEO Shopify">
+          <span class="pill">Auditoría SEO Shopify</span>
+          <span class="pill">Colecciones y productos</span>
+          <span class="pill">Migraciones a Shopify</span>
+          <span class="pill">Datos estructurados</span>
+          <span class="pill">SEO + IA</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resumen del servicio SEO Shopify">
+        <h2>SEO para Shopify con enfoque técnico, estratégico y orientado a negocio</h2>
+        <p>Shopify es una plataforma muy potente para ecommerce, pero necesita una estrategia SEO cuidada para evitar problemas de indexación, duplicidades, filtros, arquitectura débil, colecciones poco optimizadas o pérdida de tráfico en migraciones.</p>
+
+        <div class="mini-list">
+          <div class="mini-item"><span>✓</span> Revisión SEO técnica y accionable</div>
+          <div class="mini-item"><span>✓</span> Optimización de colecciones, productos y contenidos</div>
+          <div class="mini-item"><span>✓</span> Priorización según impacto real en negocio</div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="servicio">
+      <div class="section-head">
+        <div class="section-label">Servicio SEO Shopify</div>
+        <h2>SEO para Shopify pensado para captar tráfico cualificado y vender mejor</h2>
+        <p class="intro">Una tienda Shopify no necesita solo tener productos publicados. Necesita una arquitectura clara, colecciones bien planteadas, fichas de producto optimizadas, contenidos útiles, enlazado interno, datos estructurados y una estrategia que ayude a Google, Bing y sistemas de IA a entender qué vende y por qué debería mostrarla.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Colecciones y arquitectura SEO</h3>
+          <p>Reviso la estructura de colecciones, jerarquía, menús, enlazado interno, canibalizaciones, categorías estratégicas y oportunidades para captar búsquedas transaccionales.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Fichas de producto Shopify</h3>
+          <p>Analizo titles, metas, H1, descripciones, variantes, contenido útil, imágenes, enlazado interno, datos estructurados y señales que pueden mejorar el rendimiento orgánico del producto.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Indexación, rastreo y canonicals</h3>
+          <p>Detecto problemas de URLs duplicadas, parámetros, filtros, canonicals, paginación, sitemap, robots.txt, etiquetas noindex y patrones que pueden consumir presupuesto de rastreo.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">04</div>
+          <h3>Datos estructurados y breadcrumbs</h3>
+          <p>Trabajo schemas para productos, colecciones, organización, breadcrumbs, páginas, blogs y entidades de marca para mejorar la comprensión semántica de la tienda.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">05</div>
+          <h3>Blog y contenidos SEO</h3>
+          <p>Defino contenidos que respondan a intención de búsqueda, refuercen la autoridad temática, conecten con colecciones y productos, y puedan captar tráfico cualificado.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">06</div>
+          <h3>Migraciones SEO a Shopify</h3>
+          <p>Planifico paridad de URLs, redirecciones 301, control de indexación, sitemaps, canonicals, arquitectura y seguimiento para reducir riesgos de pérdida de tráfico.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="auditoria">
+      <div class="feature">
+        <div>
+          <div class="section-label">Auditoría SEO Shopify</div>
+          <h2>Qué reviso en una auditoría SEO para Shopify</h2>
+          <p>Una auditoría SEO Shopify debe servir para entender qué está frenando la visibilidad orgánica y qué acciones tienen más sentido priorizar. No se trata de entregar una lista infinita de tareas, sino de detectar bloqueos reales y convertirlos en un plan accionable.</p>
+          <p>El objetivo es que sepas qué hacer, por qué hacerlo y qué impacto puede tener en tu ecommerce.</p>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Base técnica</strong>
+            Rastreo, indexación, sitemap, robots.txt, canonicals, paginación, filtros y errores técnicos.
+          </div>
+
+          <div class="feature-item">
+            <strong>Arquitectura ecommerce</strong>
+            Colecciones, productos, menús, enlazado interno, canibalizaciones y estructura de URLs.
+          </div>
+
+          <div class="feature-item">
+            <strong>Contenido y autoridad</strong>
+            Titles, metas, headings, textos SEO, blog, intención de búsqueda, clusters y oportunidades editoriales.
+          </div>
+
+          <div class="feature-item">
+            <strong>Medición y prioridades</strong>
+            Revisión de Google Search Console, GA4, oportunidades de crecimiento y hoja de prioridades.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problemas">
+      <div class="section-head">
+        <div class="section-label">Problemas frecuentes</div>
+        <h2>Errores SEO habituales en tiendas Shopify</h2>
+        <p class="intro">Shopify facilita mucho la gestión de un ecommerce, pero también puede generar problemas SEO si no se controla bien la estructura, las URLs, los filtros, los datos estructurados o las migraciones.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">!</div>
+          <h3>Colecciones importantes sin estrategia</h3>
+          <p>Categorías con poco contenido, titles genéricos, falta de intención de búsqueda, poca diferenciación y oportunidades desaprovechadas para captar tráfico transaccional.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">!</div>
+          <h3>Problemas con filtros y parámetros</h3>
+          <p>URLs generadas por filtros, ordenaciones, variantes o parámetros que pueden provocar ruido de rastreo, duplicidades o señales SEO poco claras.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">!</div>
+          <h3>Migraciones sin paridad SEO</h3>
+          <p>Cambios de CMS, URLs o arquitectura sin redirecciones bien planteadas, sin control de indexación y sin seguimiento pueden provocar pérdidas de tráfico orgánico.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">!</div>
+          <h3>Datos estructurados incompletos</h3>
+          <p>Productos, breadcrumbs, colecciones, organización, artículos o vídeos sin marcado adecuado pueden dificultar la comprensión de la tienda por parte de buscadores e IA.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">!</div>
+          <h3>Blogs desconectados del negocio</h3>
+          <p>Contenidos informacionales sin enlazado interno hacia categorías, productos o landings estratégicas pueden atraer tráfico, pero no ayudar a la conversión.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">!</div>
+          <h3>Falta de priorización SEO</h3>
+          <p>Muchas tiendas hacen tareas SEO sueltas, pero no tienen una hoja de ruta clara basada en impacto, esfuerzo, intención de búsqueda y potencial de negocio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cms">
+      <div class="section-head">
+        <div class="section-label">También otros CMS</div>
+        <h2>Especialización en Shopify, sin limitar el SEO a un solo CMS</h2>
+        <p class="intro">Esta página está enfocada en SEO para Shopify porque es una de mis especializaciones más fuertes, pero también puedo ayudarte si tu ecommerce o web está en otro CMS.</p>
+      </div>
+
+      <div class="soft-box">
+        <p>Trabajo SEO para Shopify, pero también puedo revisar proyectos en <strong>WordPress</strong>, <strong>WooCommerce</strong>, <strong>Prestashop</strong>, CMS a medida y otras plataformas. El objetivo siempre es el mismo: entender cómo está construida la web, detectar qué limita su crecimiento orgánico y priorizar acciones que puedan generar impacto real.</p>
+      </div>
+
+      <div class="two-col">
+        <ul class="list">
+          <li><strong>Shopify:</strong> colecciones, productos, migraciones, themes, datos estructurados, filtros y arquitectura ecommerce.</li>
+          <li><strong>WordPress y WooCommerce:</strong> estructura, contenidos, categorías, productos, rendimiento, indexación y enlazado interno.</li>
+          <li><strong>Prestashop:</strong> categorías, productos, facetas, canonicals, rastreo, duplicidades y migraciones.</li>
+        </ul>
+
+        <ul class="list">
+          <li><strong>Webs a medida:</strong> auditoría técnica, indexación, arquitectura, rendimiento, datos estructurados y medición.</li>
+          <li><strong>Ecommerce en crecimiento:</strong> estrategia SEO, contenidos, reporting, priorización y captación orgánica.</li>
+          <li><strong>Marcas digitales:</strong> GEO, entidades, contenidos, autoridad temática y optimización para resultados de IA.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="metodo">
+      <div class="section-head">
+        <div class="section-label">Metodología</div>
+        <h2>Cómo trabajo el SEO para Shopify</h2>
+        <p class="intro">Mi metodología combina análisis técnico, visión ecommerce, estrategia de contenidos y priorización orientada a negocio.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>Diagnóstico inicial</h3>
+          <p>Reviso el estado de la tienda, su visibilidad, estructura, indexación, contenidos, datos estructurados y principales oportunidades SEO.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>Plan de prioridades</h3>
+          <p>Ordeno las acciones según impacto, esfuerzo, urgencia y relación con los objetivos de negocio: tráfico, ventas, leads o visibilidad.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">03</div>
+          <h3>Acompañamiento o ejecución</h3>
+          <p>Puedo ayudarte con documentación SEO, revisión técnica, recomendaciones para desarrollo, contenidos, schemas, arquitectura y seguimiento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="precios">
+      <div class="section-head">
+        <div class="section-label">Precios</div>
+        <h2>Precios orientativos de SEO para Shopify</h2>
+        <p class="intro">Cada tienda Shopify tiene necesidades distintas. Por eso trabajo con precios orientativos y propuestas personalizadas según el tamaño del ecommerce, el estado técnico y el nivel de acompañamiento necesario.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">€</div>
+          <h3>Auditoría SEO Shopify</h3>
+          <p>Revisión técnica y estratégica de la tienda para detectar problemas, oportunidades y prioridades SEO.</p>
+          <p class="price">Desde 350 €</p>
+          <p class="price-note">Ideal para saber qué está frenando el crecimiento orgánico.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">h</div>
+          <h3>Consultoría SEO estratégica</h3>
+          <p>Sesiones para resolver dudas, revisar decisiones, priorizar tareas, validar migraciones o analizar problemas concretos.</p>
+          <p class="price">Desde 90 €/hora</p>
+          <p class="price-note">Perfecta para apoyo SEO senior puntual.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">↗</div>
+          <h3>Acompañamiento SEO mensual</h3>
+          <p>Planificación, análisis, priorización, seguimiento y soporte SEO para trabajar el crecimiento de forma continua.</p>
+          <p class="price">Desde 450 €/mes</p>
+          <p class="price-note">Para marcas que quieren trabajar SEO con continuidad.</p>
+        </article>
+      </div>
+
+      <div class="soft-box" style="margin-top: 24px;">
+        <p><strong>Nota:</strong> los precios son orientativos y pueden variar según el tamaño de la tienda, el número de URLs, el estado técnico, el CMS, si hay migración y el alcance del trabajo. Los proyectos avanzados se presupuestan de forma personalizada.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="section-head">
+        <div class="section-label">FAQs</div>
+        <h2>Preguntas frecuentes sobre SEO Shopify</h2>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>¿Qué hace una consultora SEO Shopify?</summary>
+          <p>Una consultora SEO Shopify analiza y optimiza una tienda Shopify para mejorar su visibilidad orgánica. Puede trabajar rastreo, indexación, arquitectura, colecciones, productos, contenidos, enlazado interno, datos estructurados, migraciones y medición con Google Search Console y GA4.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué incluye una auditoría SEO Shopify?</summary>
+          <p>Una auditoría SEO Shopify puede incluir revisión de indexación, robots.txt, sitemap, canonicals, arquitectura, colecciones, productos, filtros, enlazado interno, contenidos, datos estructurados, breadcrumbs, rendimiento, Search Console y oportunidades de crecimiento orgánico.</p>
+        </details>
+
+        <details>
+          <summary>¿Puedes ayudarme si voy a migrar a Shopify?</summary>
+          <p>Sí. En una migración a Shopify es importante trabajar la paridad de URLs, redirecciones 301, canonicals, arquitectura, indexación, sitemap y seguimiento posterior para reducir el riesgo de pérdida de tráfico orgánico.</p>
+        </details>
+
+        <details>
+          <summary>¿Solo trabajas SEO para Shopify?</summary>
+          <p>No. Shopify es una de mis especializaciones principales, pero también trabajo SEO para ecommerce y webs en WordPress, WooCommerce, Prestashop, CMS a medida y otras plataformas.</p>
+        </details>
+
+        <details>
+          <summary>¿Cuánto cuesta una consultoría SEO Shopify?</summary>
+          <p>Los precios dependen del alcance del proyecto. Como referencia, una auditoría SEO puntual empieza desde 350 €, la consultoría estratégica desde 90 €/hora y el acompañamiento SEO mensual desde 450 €/mes.</p>
+        </details>
+
+        <details>
+          <summary>¿Cómo puedo solicitar una revisión SEO de mi tienda Shopify?</summary>
+          <p>Puedes solicitar un diagnóstico SEO inicial a través del formulario o escribirme a <a href="mailto:mariana.amayacanas@gmail.com">mariana.amayacanas@gmail.com</a> explicando la URL de tu tienda, el CMS y qué necesitas mejorar.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="cta-section">
+      <div class="cta">
+        <h2>¿Quieres saber qué está frenando el SEO de tu tienda Shopify?</h2>
+        <p>Rellena el formulario con tu web y cuéntame qué necesitas mejorar. Revisaré tu caso para valorar si puedo ayudarte con una auditoría SEO, una migración, una estrategia orgánica o apoyo freelance especializado.</p>
+        <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Solicitar diagnóstico SEO Shopify</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Mariana Amaya · Consultora SEO y GEO Freelance</p>
+    <p>
+      <a href="/">Inicio</a> ·
+      <a href="mailto:mariana.amayacanas@gmail.com">mariana.amayacanas@gmail.com</a> ·
+      <a href="https://es.linkedin.com/in/mariana-amaya" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>
