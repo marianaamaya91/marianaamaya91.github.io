@@ -835,6 +835,21 @@
     color: #ffffff !important;
   }
 }
+    /* Corrección: ocultar hamburguesa en escritorio y mostrarla solo en móvil */
+@media (min-width: 901px) {
+  .menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex !important;
+    visibility: visible !important;
+  }
+}
+
   </style>
 
   <script type="application/ld+json">
@@ -1006,7 +1021,7 @@
         <p class="hero-lead">Soy Mariana Amaya, consultora SEO y GEO freelance. Ayudo a marcas digitales a priorizar acciones para ganar visibilidad, tráfico cualificado y oportunidades de venta en Google, Bing y resultados de inteligencia artificial.</p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener" onclick="gtag('event', 'click_diagnostico_seo', {'event_category': 'lead', 'event_label': 'Formulario diagnóstico SEO'});">Solicitar diagnóstico SEO</a>
+          <a class="btn btn-primary" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener" onclick="if (typeof gtag === 'function') { gtag('event', 'click_diagnostico_seo', {'event_category': 'lead', 'event_label': 'Formulario diagnóstico SEO'}); }">Solicitar diagnóstico SEO</a>
           <a class="btn btn-secondary" href="mailto:mariana.amayacanas@gmail.com">Escribirme por email</a>
         </div>
 
