@@ -149,21 +149,6 @@
   color: var(--accent-dark);
 }
 
-.nav-links a[aria-current="page"]::after {
-  display: none;
-}
-
-.nav-links a[aria-current="page"]::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -7px;
-  height: 2px;
-  border-radius: 999px;
-  background: var(--accent);
-}
-
 .nav-cta {
   justify-content: center !important;
   margin-top: 8px;
@@ -783,6 +768,155 @@
         gap: 8px;
       }
     }
+/* Menú responsive definitivo */
+
+.nav-links a[aria-current="page"]::after {
+  display: none;
+}
+
+@media (min-width: 1101px) {
+  .nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .brand {
+    margin-bottom: 0 !important;
+  }
+
+  .menu-toggle {
+    display: none !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 16px !important;
+  }
+
+  .nav-links a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-size: 14px !important;
+    color: var(--dark-soft) !important;
+    background: transparent !important;
+    position: relative !important;
+    text-decoration: none !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    color: var(--accent-dark) !important;
+    background: transparent !important;
+  }
+
+  .nav-links a[aria-current="page"]::after {
+    content: "";
+    display: block !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+
+  .nav-cta {
+    margin-top: 0 !important;
+    padding: 10px 16px !important;
+    border-radius: 999px !important;
+    background: var(--dark) !important;
+    color: #ffffff !important;
+  }
+
+  .nav-cta::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .brand {
+    margin-bottom: 0 !important;
+  }
+
+  .brand-logo {
+    width: 205px;
+  }
+
+  .menu-toggle {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none !important;
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    left: 18px !important;
+    right: 18px !important;
+    z-index: 60 !important;
+    background: #ffffff !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 24px !important;
+    padding: 18px !important;
+    box-shadow: var(--shadow) !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 4px !important;
+  }
+
+  .nav-links.is-open {
+    display: flex !important;
+  }
+
+  .nav-links a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 13px 14px !important;
+    border-radius: 14px !important;
+    font-size: 15px !important;
+    color: var(--dark) !important;
+    text-decoration: none !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    background: var(--cream) !important;
+    color: var(--accent-dark) !important;
+  }
+
+  .nav-links a[aria-current="page"]::after {
+    display: none !important;
+  }
+
+  .nav-cta {
+    justify-content: center !important;
+    margin-top: 8px !important;
+    padding: 14px 16px !important;
+    background: var(--dark) !important;
+    color: #ffffff !important;
+  }
+}
+ 
+
   </style>
 
   <script type="application/ld+json">
