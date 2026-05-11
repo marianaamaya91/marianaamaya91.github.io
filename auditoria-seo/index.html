@@ -626,6 +626,193 @@
         grid-template-columns: 1fr;
       }
     }
+    /* Menú responsive definitivo */
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 2px;
+  background: var(--dark);
+  border-radius: 999px;
+  display: block;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.menu-toggle.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-links a[aria-current="page"]::after {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .brand {
+    margin-bottom: 0 !important;
+  }
+
+  .menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 16px !important;
+  }
+
+  .nav-links a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    font-size: 14px !important;
+    color: var(--dark-soft) !important;
+    background: transparent !important;
+    position: relative !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    color: var(--accent-dark) !important;
+    background: transparent !important;
+  }
+
+  .nav-links a[aria-current="page"]::after {
+    content: "";
+    display: block !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--accent);
+  }
+
+  .nav-cta {
+    margin-top: 0 !important;
+    padding: 10px 16px !important;
+    border-radius: 999px !important;
+    background: var(--dark) !important;
+    color: #ffffff !important;
+  }
+
+  .nav-cta::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    position: relative !important;
+  }
+
+  .brand {
+    margin-bottom: 0 !important;
+  }
+
+  .brand-logo {
+    width: 205px;
+  }
+
+  .menu-toggle {
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+  .nav-links {
+    display: none !important;
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+    left: 18px !important;
+    right: 18px !important;
+    z-index: 60 !important;
+    background: #ffffff !important;
+    border: 1px solid var(--line) !important;
+    border-radius: 24px !important;
+    padding: 18px !important;
+    box-shadow: var(--shadow) !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 4px !important;
+  }
+
+  .nav-links.is-open {
+    display: flex !important;
+  }
+
+  .nav-links a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 13px 14px !important;
+    border-radius: 14px !important;
+    font-size: 15px !important;
+    color: var(--dark) !important;
+    text-decoration: none !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    background: var(--cream) !important;
+    color: var(--accent-dark) !important;
+  }
+
+  .nav-links a[aria-current="page"]::after {
+    display: none !important;
+  }
+
+  .nav-cta {
+    justify-content: center !important;
+    margin-top: 8px !important;
+    padding: 14px 16px !important;
+    background: var(--dark) !important;
+    color: #ffffff !important;
+  }
+}
   </style>
 
   <script type="application/ld+json">
@@ -820,21 +1007,30 @@
 
 <body>
 
-  <div class="topbar">
-    <nav class="nav" aria-label="Navegación principal">
-      <a class="brand" href="/" aria-label="Inicio Mariana Amaya">
-        <img src="/logo-mariana-amaya-seo.svg" alt="Mariana Amaya, consultora SEO y GEO freelance" class="brand-logo" width="220" height="48">
-      </a>
+ <div class="topbar">
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="brand" href="/" aria-label="Ir a la página de inicio de Mariana Amaya">
+      <img src="/logo-mariana-amaya-seo.svg" alt="Mariana Amaya, consultora SEO y GEO freelance" class="brand-logo" width="220" height="48">
+    </a>
 
-      <div class="nav-links">
-        <a href="#incluye">Qué incluye</a>
-        <a href="#ecommerce">Ecommerce</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#precios">Precios</a>
-        <a class="nav-cta" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener">Diagnóstico SEO</a>
-      </div>
-    </nav>
-  </div>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links" id="main-menu">
+      <a href="/servicios-seo/">Servicios SEO</a>
+      <a href="/seo-shopify/">SEO Shopify</a>
+      <a href="/auditoria-seo/" aria-current="page">Auditoría SEO</a>
+      <a href="/migracion-seo-shopify/">Migraciones SEO</a>
+      <a href="/seo-y-geo/">SEO y GEO</a>
+      <a href="/datos-estructurados-schemas/">Schemas</a>
+      <a href="/sobre-mi/">Sobre mí</a>
+      <a class="nav-cta" href="https://forms.gle/G1pCRBZJQkMFkLJ56" target="_blank" rel="noopener" onclick="if (typeof gtag === 'function') { gtag('event', 'click_diagnostico_seo', {'event_category': 'lead', 'event_label': 'Formulario diagnóstico SEO'}); }">Diagnóstico SEO</a>
+    </div>
+  </nav>
+</div>
 
   <header class="hero" id="inicio">
     <div class="hero-inner">
@@ -1145,6 +1341,27 @@
       <a href="https://es.linkedin.com/in/mariana-amaya" target="_blank" rel="noopener">LinkedIn</a>
     </p>
   </footer>
+
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mainMenu = document.querySelector('#main-menu');
+
+  if (menuToggle && mainMenu) {
+    menuToggle.addEventListener('click', function () {
+      const isOpen = mainMenu.classList.toggle('is-open');
+      menuToggle.classList.toggle('is-open', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    mainMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mainMenu.classList.remove('is-open');
+        menuToggle.classList.remove('is-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
